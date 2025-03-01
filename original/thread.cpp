@@ -23,7 +23,7 @@ struct Thread {
         }
     }
 
-    void update(const int clickX, const int clickY, const float forceRadius, const bool isClicking, float dt) {
+    void update(const int clickX, const int clickY, const float forceRadius, const bool &isClicking, Uint32 dt) {
     // Handle mouse input
         if (isClicking) {
             for (auto &particle: particles) {
@@ -67,8 +67,10 @@ struct Thread {
 
         for (auto &particle: particles) {
             if (!particle.anchored) {
-                particle.vx *= 0.98f; // Damping -- fades wave efffect (lower value = more damping/slower reset)
-                particle.vy *= 0.96f;
+                // particle.vx *= 0.98f; // Damping -- fades wave efffect (lower value = more damping/slower reset)
+                particle.vx *= 0.9999f; // Damping -- fades wave efffect (lower value = more damping/slower reset)
+                // particle.vy *= 0.96f;
+                particle.vy *= 0.60f;
                 particle.x += particle.vx;
                 particle.y += particle.vy;
             }
