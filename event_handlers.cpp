@@ -1,5 +1,6 @@
+#include "event_handlers.h"
 #include "globals.h"
-
+#include "string_manipulation.h"
 #include <iostream>
 
 void mouseDisplacementHandler(const SDL_Event &event) {
@@ -37,7 +38,7 @@ void mouseSizeHandler(const SDL_Event &event) {
 }
 
 void scrollHandler(const SDL_Event &event, const bool *scrollForDistance) {
-    if (scrollForDistance) {
+    if (*scrollForDistance) {
         mouseDisplacementHandler(event);
     } else {
         mouseSizeHandler(event);

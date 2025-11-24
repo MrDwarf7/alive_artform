@@ -1,3 +1,4 @@
+#include "physics.h"
 #include "globals.h"
 // #include <cmath>
 
@@ -33,7 +34,7 @@ void render(SDL_Renderer *renderer) {
             const float displace = strings[s][i] * MOUSE_STRENGTH_DISPLACEMENT; // displacement
             pts[i] = {static_cast<int>(xBase + displace), static_cast<int>(y)};
         }
-        SDL_RenderDrawLines(renderer, pts, N_POINTS);
+        SDL_RenderDrawLines(renderer, &pts[0], N_POINTS);
     }
 }
 

@@ -46,6 +46,7 @@ int main(int argc, char *argv[]) {
     // const float dt = BASE_DT;
     float accumulator = 0.0f;
     Uint32 prevTime = SDL_GetTicks();
+    // Move this into a MousePointerTracker class or similar, don't modify global variables directly.
     int mouseX, mouseY;
     int prevMouseX, prevMouseY;
     SDL_GetMouseState(&prevMouseX, &prevMouseY);
@@ -53,6 +54,7 @@ int main(int argc, char *argv[]) {
     while (!quit) {
         SDL_Event event;
 
+        // TODO: on game reset - we're not resetting the BASE_DT lol.
         handleEvents(event, quit, scrollForDistance, BASE_DT);
 
         const Uint32 mouseState = SDL_GetMouseState(&mouseX, &mouseY);

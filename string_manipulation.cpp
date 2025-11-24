@@ -1,3 +1,4 @@
+#include "string_manipulation.h"
 #include "constants.h"
 #include "globals.h"
 #include "physics.h"
@@ -46,13 +47,14 @@ void strumStrings(const int mouseX, const int mouseY, const int deltaX) {
             if (abs(mouseX - currentX) < MOUSE_SIZE_THRESHOLD) {
                 const int randSeed = randGen(generator);
                 if (abs(deltaX) > speedThreshold) {
-                    // printf("Fast mouse movement\n");
+                    printf("Fast mouse movement\n");
                     strumOnRadius(mouseY, s, direction, randSeed); // Fast mouse movement
                 } else {
-                    // printf("Slow mouse movement\n");
+                    printf("Slow mouse movement\n");
                     strumBasic(mouseY, s, direction, randSeed); // Slow mouse movement
                 }
             }
         }
     }
 }
+

@@ -17,5 +17,5 @@ constexpr int WIDTH = 1600;
 constexpr int HEIGHT = 800;
 
 // String simulation params
-constexpr int NUM_STRINGS = 120;
+constexpr int NUM_STRINGS = 120; // 120 original
 constexpr int N_POINTS = 110;
