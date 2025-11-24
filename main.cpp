@@ -4,11 +4,11 @@
 
 #include <SDL.h>
 
-#include "constants.h"
-#include "event_handlers.h"
-#include "globals.h"
-#include "physics.h"
-#include "string_manipulation.h"
+#include "constants.hpp"
+#include "event_handlers.hpp"
+#include "globals.hpp"
+#include "physics.hpp"
+#include "string_manipulation.hpp"
 
 ////// No idea why this is needed - but header files suck
 #include "event_handlers.cpp"

@@ -3,3 +3,6 @@
 .idea/
 .scrap/
 cmake-build-*
+
+!build/Makefile
+build

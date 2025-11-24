@@ -1,7 +1,7 @@
-#include "string_manipulation.h"
-#include "constants.h"
-#include "globals.h"
-#include "physics.h"
+#include "string_manipulation.hpp"
+#include "constants.hpp"
+#include "globals.hpp"
+#include "physics.hpp"
 
 void initializeStrings() {
     for (int s = 0; s < NUM_STRINGS; s++) {
@@ -57,4 +57,3 @@ void strumStrings(const int mouseX, const int mouseY, const int deltaX) {
         }
     }
 }
-

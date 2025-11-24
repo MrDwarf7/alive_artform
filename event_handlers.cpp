@@ -1,7 +1,7 @@
-#include "event_handlers.h"
-#include "globals.h"
-#include "string_manipulation.h"
+#include "event_handlers.hpp"
 #include <iostream>
+#include "globals.hpp"
+#include "string_manipulation.hpp"
 
 void mouseDisplacementHandler(const SDL_Event &event) {
     if (event.wheel.y > 0) { // scroll up

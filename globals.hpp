@@ -5,8 +5,8 @@
 #include <iostream>
 #include <random>
 
-#include "constants.h"
-#include "globals.h"
+#include "constants.hpp"
+#include "globals.hpp"
 
 extern float strings[NUM_STRINGS][N_POINTS];
 extern float stringsPrev[NUM_STRINGS][N_POINTS];

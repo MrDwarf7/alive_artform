@@ -1,5 +1,5 @@
-#include "physics.h"
-#include "globals.h"
+#include "physics.hpp"
+#include "globals.hpp"
 // #include <cmath>
 
 float xBaseCalc(const int s) {

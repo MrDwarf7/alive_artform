@@ -1,7 +1,7 @@
 #pragma once
 
-#include "globals.h"
 #include <iostream>
+#include "globals.hpp"
 
 void mouseDisplacementHandler(const SDL_Event &event);
 void mouseSizeHandler(const SDL_Event &event);
