@@ -1,7 +1,5 @@
 #pragma once
 
-#include "globals.hpp"
-
 // String manipulation
 void initializeStrings();
 void strumStrings(int mouseX, int mouseY, int deltaX);
