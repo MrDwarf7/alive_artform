@@ -44,7 +44,7 @@ int main(void) {
   SDL_Init(SDL_INIT_VIDEO);
 
   SDL_Window *window =
-      SDL_CreateWindow("Wave Harp", SDL_WINDOWPOS_CENTERED,
+      SDL_CreateWindow("Alive Artform", SDL_WINDOWPOS_CENTERED,
                        SDL_WINDOWPOS_CENTERED, WIDTH, HEIGHT, 0);
   SDL_Renderer *renderer =
       SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);

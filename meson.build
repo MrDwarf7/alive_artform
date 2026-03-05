@@ -1,11 +1,20 @@
+# If meson not building/pulling deps, try:
+# meson setup build --wipe --clearcache \
+#        --wrap-mode=forcefallback
+#
+## and then
+#
+# meson compile -C ./build/
+
 project(
   'alive_artform',
   'cpp',
   version: '0.1.0',
   default_options: [
-    'cpp_std=c++17',
+    'cpp_std=c++23',
     'warning_level=2',
-    '--force-fallback-for=sdl2,sdl2_ttf', ## We FORCE meson download of deps to pin versions
+    'force-fallback-for=sdl2,sdl2_ttf', ## We FORCE meson download of deps to pin versions
+    'wrap_mode=forcefallback', ## Force meson to use fallback (downloaded) deps instead of system ones, if they exist. This is to ensure we get the pinned versions.
   ],
 )
 
