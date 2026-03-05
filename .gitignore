@@ -1,8 +1,43 @@
-
 .git/
 .idea/
 .scrap/
+.cache/
+.cache/*
+
+.prev*/**/*
+_*
+_*/
+_
+
+.idea/
+.idea/*
+.idea/**/*
+
+env*
+*env
+*env*
+*.env*
+
+# Build output
+build/
+builddir/
+
+# Old cmake artifacts
 cmake-build-*
 
-!build/Makefile
-build
+# Meson subproject sources (downloaded at build time)
+# subprojects/**/*
+
+subprojects/SDL2-*/
+subprojects/SDL2_ttf-*/
+subprojects/freetype-*/
+subprojects/harfbuzz-*/
+subprojects/packagecache/
+
+# Old vendored Windows binaries
+.old_build_system/include/**/*.dll
+.old_build_system/include/**/*.pdb
+
+.old*
+.old/**/*
+
